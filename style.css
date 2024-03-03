@@ -1,0 +1,248 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.979), #000000b9);
+    color: #fff;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+header {
+    background: rgba(90, 90, 90, 0.979); /* Background color for the header */
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image {
+    position: absolute;
+    top: 0px; /* Adjust as needed to cut off the top of the image */
+    right: 0px;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 200px;
+    text-align: center;
+    padding: 0;
+}
+
+.about-me .container {
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 20px; /* Adjust padding as needed */
+    max-width: 800px; /* Limit the maximum width of the container */
+    margin: auto; /* Center the container horizontally */
+}
+
+.about-me .container img {
+    margin-bottom: 40px;
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+}
+
+.skills img {
+    width: 375px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns for the grid */
+    gap: 20px; /* Adjust the gap between grid items */
+}
+
+.projects {
+    text-align: center;
+}
+
+.projects a {
+    color: navy;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.projects img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto;
+    max-width: 100%;
+}
+
+.project-1 {
+    grid-row: span 2;
+    grid-column: span auto; /* Span 2 rows */
+}
+
+
+footer {
+    background: rgba(90, 90, 90, 0.979);
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Adjustments for tablets (landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust font sizes */
+    body {
+        font-size: 18px; /* Adjust as needed */
+    }
+
+    /* Stack elements */
+    .container {
+        text-align: left; /* Align text to left for better stacking */
+    }
+
+    /* Adjust padding and margins */
+    .header-container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    /* Adjust header image size */
+    .header-container .image img {
+        width: 200px; /* Adjust as needed */
+        height: auto;
+    }
+
+    /* Adjust image sizes */
+    .about-me .container img {
+        width: 100%; /* Make images fill container width */
+        max-width: 250px; /* Limit maximum width */
+        height: auto;
+    }
+
+    .skills img,
+    .projects .project img {
+        width: 100%; /* Make images fill container width */
+        max-width: 200px; /* Limit maximum width */
+        height: auto;
+    }
+    .project a {
+        font-size: 16px;
+    }
+}
+
+/* Adjustments for tablets (portrait) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /* Adjust font sizes */
+    body {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    /* Stack elements */
+    .container {
+        text-align: left; /* Align text to left for better stacking */
+    }
+
+    /* Adjust padding and margins */
+    .header-container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    /* Adjust header image size */
+    .header-container .image img {
+        width: 150px; /* Adjust as needed */
+        height: auto;
+    }
+
+    /* Adjust image sizes */
+    .about-me .container img {
+        width: 200px; /* Make images fill container width */
+        max-width: 200px; /* Limit maximum width */
+        height: auto;
+    }
+
+    .skills img,
+    .projects .project img {
+        width: 100%; /* Make images fill container width */
+        max-width: 150px; /* Limit maximum width */
+        height: auto;
+    }
+    .project a {
+        font-size: 16px;
+    }
+}
+
+
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 599px) {
+
+    .header-container .image img {
+        width: 100px; /* Adjust as needed */
+        height: auto;
+    }
+    /* Adjust font sizes */
+    body {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    /* Stack elements */
+    .container {
+        text-align: left; /* Align text to left for better stacking */
+    }
+
+    /* Adjust padding and margins */
+    .header-container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .about-me .container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .skills .container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .projects .container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .footer .container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    /* Adjust image sizes */
+    .about-me .container img {
+        width: 100%; /* Make images fill container width */
+        max-width: 250px; /* Limit maximum width */
+        height: auto;
+    }
+
+    .skills img,
+    .projects .project img {
+        width: 100%; /* Make images fill container width */
+        max-width: 200px; /* Limit maximum width */
+        height: auto;
+    }
+    .project a {
+        font-size: 16px;
+    }
+}
